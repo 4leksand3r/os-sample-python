@@ -7,6 +7,10 @@ application = Flask(__name__)
 def producer():
     return "Kafka producer test"
 
+@application.route("/consumer")
+def consumer():
+    return "Kafka consumer test"
+
 @application.route("/")
 def hello():
     return "Ей, ты! А ну выпусти меня из этого контейнера!"
