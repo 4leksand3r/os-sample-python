@@ -3,6 +3,10 @@ from kafka import KafkaProducer
 
 application = Flask(__name__)
 
+@application.route("/producer")
+def producer():
+    return "Kafka producer test"
+
 @application.route("/")
 def hello():
     return "Ей, ты! А ну выпусти меня из этого контейнера!"
