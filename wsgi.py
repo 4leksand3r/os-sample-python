@@ -20,7 +20,7 @@ def consumer():
 
 @application.route("/")
 def hello():
-    return "Ей, ты! А ну выпусти меня из этого контейнера!"
+    return "Xtkjdtr? А ну выпусти меня из этого контейнера!"
 
 if __name__ == "__main__":
     application.run()
